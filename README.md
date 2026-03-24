@@ -1,12 +1,6 @@
 # Data Status
 
-Text-Image 데이터 현황
-
----
-
-## Training Data
-
-학습 데이터 상세 현황은 [DATA.md](DATA.md) 참조.
+Text-Image 데이터 상세 현황은 [DATA.md](DATA.md) 참조.
 
 ### 한국어
 
