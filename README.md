@@ -1,12 +1,32 @@
 # Data Status
 
-학습 데이터 현황 및 SDS(Scientific Document Synthetic) QA 생성 예시.
+Text-Image 데이터 현황
 
 ---
 
 ## Training Data
 
 학습 데이터 상세 현황은 [DATA.md](DATA.md) 참조.
+
+### 한국어
+
+| 카테고리 | 데이터셋 수 | QA 페어 |
+|----------|-----------|---------|
+| Extraction_Caption | 13 | 11,653,476 |
+| Extraction_OCR | 4 | 748,053 |
+| Extraction_ShortQA | 8 | 1,054,105 |
+| Parsing | 4 | 278,545 |
+| Reasoning | 5 | 362,691 |
+| TextOnly | 1 | 230,868 |
+
+### 영어
+
+| 카테고리 | 데이터셋 수 | QA 페어 |
+|----------|-----------|---------|
+| Extraction_Caption | 1 | 7,666,166 |
+| Extraction_OCR | 1 | 129,871 |
+| Reasoning | 1 | 65,000 |
+
 
 ---
 
@@ -18,12 +38,10 @@ SDSFramework로 과학 논문 PDF에서 자동 생성한 QA 데이터 예시 (51
 
 #### Extraction (추출)
 
-| | |
-|---|---|
-| ![EXT-VAL](example/01_EXT-VAL.png) | ![EXT-LABEL](example/02_EXT-LABEL.png) |
-| **EXT-VAL** — 수치 추출 | **EXT-LABEL** — 축/범례 라벨 추출 |
-| ![EXT-ENUM](example/03_EXT-ENUM.png) | |
-| **EXT-ENUM** — 요소 열거/개수 | |
+| | | |
+|---|---|---|
+| ![EXT-VAL](example/01_EXT-VAL.png) | ![EXT-LABEL](example/02_EXT-LABEL.png) | ![EXT-ENUM](example/03_EXT-ENUM.png) |
+| **EXT-VAL** — 수치 추출 | **EXT-LABEL** — 축/범례 라벨 추출 | **EXT-ENUM** — 요소 열거/개수 |
 
 #### Captioning (캡션)
 
@@ -34,12 +52,10 @@ SDSFramework로 과학 논문 PDF에서 자동 생성한 QA 데이터 예시 (51
 
 #### Reasoning (추론)
 
-| | |
-|---|---|
-| ![RSN-CAUSE](example/06_RSN-CAUSE.png) | ![RSN-TREND](example/07_RSN-TREND.png) |
-| **RSN-CAUSE** — 인과 분석 | **RSN-TREND** — 추세/패턴 분석 |
-| ![RSN-COUNTER](example/08_RSN-COUNTER.png) | |
-| **RSN-COUNTER** — 반사실 추론 | |
+| | | |
+|---|---|---|
+| ![RSN-CAUSE](example/06_RSN-CAUSE.png) | ![RSN-TREND](example/07_RSN-TREND.png) | ![RSN-COUNTER](example/08_RSN-COUNTER.png) |
+| **RSN-CAUSE** — 인과 분석 | **RSN-TREND** — 추세/패턴 분석 | **RSN-COUNTER** — 반사실 추론 |
 
 #### Faithfulness (검증)
 
@@ -64,18 +80,14 @@ SDSFramework로 과학 논문 PDF에서 자동 생성한 QA 데이터 예시 (51
 
 ### Level 3: Cross-paper (논문 간 비교)
 
-| | |
-|---|---|
-| ![CROSS-METHOD](example/15_CROSS-METHOD.png) | ![CROSS-RESULT](example/16_CROSS-RESULT.png) |
-| **CROSS-METHOD** — 방법론 비교 | **CROSS-RESULT** — 성능/결과 비교 |
-| ![CROSS-EVOLUTION](example/17_CROSS-EVOLUTION.png) | |
-| **CROSS-EVOLUTION** — 기술 발전 추적 | |
+| | | |
+|---|---|---|
+| ![CROSS-METHOD](example/15_CROSS-METHOD.png) | ![CROSS-RESULT](example/16_CROSS-RESULT.png) | ![CROSS-EVOLUTION](example/17_CROSS-EVOLUTION.png) |
+| **CROSS-METHOD** — 방법론 비교 | **CROSS-RESULT** — 성능/결과 비교 | **CROSS-EVOLUTION** — 기술 발전 추적 |
 
 ### Level 4: Benchmark (KRETA-style)
 
-| | |
-|---|---|
-| ![KRETA-S1-VALUE](example/18_KRETA-S1-VALUE.png) | ![KRETA-S2-COMPARE](example/19_KRETA-S2-COMPARE.png) |
-| **S1-VALUE** — 수치 추출 (텍스트 인식) | **S2-COMPARE** — 수치 비교/순위 (추론) |
-| ![KRETA-S2-TREND](example/20_KRETA-S2-TREND.png) | |
-| **S2-TREND** — 추세/패턴 분석 (추론) | |
+| | | |
+|---|---|---|
+| ![KRETA-S1-VALUE](example/18_KRETA-S1-VALUE.png) | ![KRETA-S2-COMPARE](example/19_KRETA-S2-COMPARE.png) | ![KRETA-S2-TREND](example/20_KRETA-S2-TREND.png) |
+| **S1-VALUE** — 수치 추출 (텍스트 인식) | **S2-COMPARE** — 수치 비교/순위 (추론) | **S2-TREND** — 추세/패턴 분석 (추론) |
